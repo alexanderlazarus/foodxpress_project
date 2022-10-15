@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <?php
+use PHPMailer\PHPMailer\PHPMailer;
+function sendmail(){
+    $name = "EX - joey"; //name of your company//
+    $to = "receivermail@gmail.com";//mail of reciever//
+    $subject = "Tutorial";
+    $body = "Send mail using PHPMailer - ms the tech guy";
+    $from = "yourmail@gmail.com";
+    $password = "yourpassword";
+
+    require_once "PHPMailer/PHPMailer.php";
+    require_once "PHPMailer/SMTP.php"
+    require_once "PHPMailer/Exception.php";
+$mail = new PHPMailler();
+
+//SMTP SETTING
+$mail->isSMTP();
+$mail->STMPOebug = );
+$mail->HOST = "stmp.gmail.com";//set address of your email
+$mail->SMTPAuth = true;
+$mail->Username = $from;
+$mail->Password = $password;
+$mail->Port = 587;//port
+$mail->SMTPSecure = "tls";//tls or ssl
+$mail->smtpCnnect([
+    'ssl' => [
+        'verify_peer'=> false,
+        'verify_peer_name'=> false,
+        'allow_self_signed' => true
+        ]
+    ]);
+    //Email settings
+    $mail ->isHTML(true);
+    $mail->setfrom($from, $name);
+    $mail->addAddress($to)//enter email you want to send to
+    $mail->Subject = ("$subject");
+    $mail->Body = $body;
+    if ($mail->send()){
+        echo "Email is sent";
+    } else {
+        echo "something is wrong" . $mail->errorinfo;
+    }
+}
+// sendmail();
+if (isset($_GET['sendmail'])){
+    sendmail();
+}
+?>
+</head>
+<body>
+    <?php
+use PHPMailer\PHPMailer\PHPMailer;
+function sendmail(){
+    $name = "EX - joey"; //name of your company//
+    $to = "receivermail@gmail.com";//mail of reciever//
+    $subject = "Tutorial";
+    $body = "Send mail using PHPMailer - ms the tech guy";
+    $from = "yourmail@gmail.com";
+    $password = "yourpassword";
+
+    require_once "PHPMailer/PHPMailer.php";
+    require_once "PHPMailer/SMTP.php"
+    require_once "PHPMailer/Exception.php";
+$mail = new PHPMailler();
+
+//SMTP SETTING
+$mail->isSMTP();
+$mail->STMPOebug = );
+$mail->HOST = "stmp.gmail.com";//set address of your email
+$mail->SMTPAuth = true;
+$mail->Username = $from;
+$mail->Password = $password;
+$mail->Port = 587;//port
+$mail->SMTPSecure = "tls";//tls or ssl
+$mail->smtpCnnect([
+    'ssl' => [
+        'verify_peer'=> false,
+        'verify_peer_name'=> false,
+        'allow_self_signed' => true
+        ]
+    ]);
+    //Email settings
+    $mail ->isHTML(true);
+    $mail->setfrom($from, $name);
+    $mail->addAddress($to)//enter email you want to send to
+    $mail->Subject = ("$subject");
+    $mail->Body = $body;
+    if ($mail->send()){
+        echo "Email is sent";
+    } else {
+        echo "something is wrong" . $mail->errorinfo;
+    }
+}
+// sendmail();
+if (isset($_GET['sendmail'])){
+    sendmail();
+}
+?>
+    <form action="sendmail.php" method="get">
+        <button type="submit" name="sendmail">sendmail</button>
+    </form>
+</body>
+</html>
