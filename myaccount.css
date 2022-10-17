@@ -1,0 +1,120 @@
+
+ 
+ input{
+    width: 16rem;
+    position: relative;
+    left: 10px;
+}
+
+.container{
+    margin: 20vh auto;
+    height: 27rem;
+    width: 20rem;
+    background-color: black;
+    /* text-align: center; */
+    border-radius: 50px;
+    box-shadow: 1px 1px 2px #d1d9e6 , 2px 2px 1px #f9f9f9;
+}
+.form{
+    background-color: #000;
+    color: #ff523b;
+    border-radius: 50px;
+    width: 90px;
+    border-bottom: none;
+    position: relative;
+    left: 90px;
+    text-decoration: none;
+}
+.fbn{
+    text-align: center;
+    color: #ff523b;
+    font-size: xx-large;
+}
+.form:hover{
+    border: 1px black solid;
+   color: #fff;
+}
+.x{
+    text-align: center;
+    color: orangered;
+    font-family: sans-serif;
+    position: relative;
+    top: 50px;
+
+}
+.contain{
+        margin: 20vh auto;
+        height: 35vh;
+        width: 5rem;
+        background-color: #ff523b;
+        text-align: center;
+        border-radius: 50px;
+        position: relative;
+        top: 10vh;
+        
+}
+.containing{
+    margin: 20vh auto;
+    height: 44vh;
+    width: 20rem;
+    background-color: #ff523b;
+    text-align: center;
+    border-radius: 50px;
+    position: relative;
+    top: 10vh;
+    
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0px;
+    border-radius: 30px;
+    transition: background 0.5s;
+
+}
+.btn:hover{
+    background: #563434;
+}
+.tcp{
+    border-width: 0px;
+border-radius: 30px;
+width: 300px;
+text-align: center;
+border: none;
+outline: none;
+box-shadow: 2px 2px 4px white, inset -2px -2px 4px white;
+
+}
+p{
+    color: #ff523b;
+    text-align: center;
+}
+.submit{
+   position: relative;
+   left: 70px;
+    border-radius: 5px;
+    color: #ff523b;
+    background-color: black;
+}
+.submit:hover{
+    transition: 0.5s;
+    color: #fff;
+}
+.p{
+    color: black;
+}
+.state{
+    background-color: green;
+}
+.know{
+    background-color: green;
+    text-align: center;
+}
+.decoration{
+    padding: .1rem 7rem;
+}
+.rbs{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
