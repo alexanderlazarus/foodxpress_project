@@ -6,24 +6,19 @@
     left: 10px;
 }
 
-/* .container{
+.container{
     margin: 20vh auto;
-    background-color: #563434;
     height: 27rem;
     width: 23rem;
-   border: 3px solid black;
-    border-radius: 50px;
-    box-shadow: 1px 1px 2px #d1d9e6 , 2px 2px 1px #f9f9f9;
-    text-align: center;
-} */
+}
 .form{
+    background-color: #000;
+    color: #ff523b;
     border-radius: 50px;
     width: 90px;
-    margin-top: 50%;
-    margin-right: 5%;
-    border-radius: 5px;
-    color: #ff523b;
-    background-color: black;
+    border-bottom: none;
+    position: relative;
+    left: 90px;
     text-decoration: none;
 }
 .fbn{
@@ -54,7 +49,7 @@
         top: 10vh;
         
 }
-/* .containing{
+.containing{
     margin: 20vh auto;
     height: 27vh;
     width: 23rem;
@@ -64,7 +59,7 @@
     position: relative;
     top: 10vh;
     
-} */
+}
 .btn{
     display: inline-block;
     background: #ff523b;
@@ -92,19 +87,17 @@ p{
     text-align: center;
 }
 .submit{
-    margin-top: 50%;
-    margin-right: 5%;
-    border-radius: 5px;
+   position: relative;
+   left: 70px;
     color: #ff523b;
-    background-color: black;
 }
 .submit:hover{
     transition: 0.5s;
     color: #fff;
 }
-/* .p{
+.p{
     color: black;
-} */
+}
 .state{
     background-color: green;
 }

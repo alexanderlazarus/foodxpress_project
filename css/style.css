@@ -6,6 +6,18 @@
 
 /* my own ooo */
 
+.fuckoff{
+  border-width: 0px;
+ border-radius: 30px;
+ width: 300px;
+ text-align: center;
+ border: 2px solid white;
+ outline: none;
+ box-shadow: 2px 2px 4px white, inset -2px -2px 4px white;
+}
+hr{
+  border-color: #daed0e;
+}
 .next{
   position:relative;
   left: 890px;
@@ -153,7 +165,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 .menu-icon{
   width: 28px;
-  margin-left: 28px;
+  margin-left: 48px;
   display: none;
   position: relative;
   bottom: 110px;
@@ -162,6 +174,27 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 /* menu query for menu */
 @media only screen and (max-width: 720px){
+  
+  
+  main{
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 4px;
+  }
+  hr{
+    border-color: #daed0e;
+  }
+  
+  .fuckoff{
+      border-width: 0px;
+     border-radius: 30px;
+     width: 300px;
+     text-align: center;
+     border: 2px solid white;
+     outline: none;
+     box-shadow: 2px 2px 4px white, inset -2px -2px 4px white;
+  }
   nav ul{
     position:absolute;
     top: 90px;
@@ -171,7 +204,6 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width: 90%;
     overflow: hidden;
     transition: max-height 0.5s;
-
   }
   .next{
     position:relative;
@@ -528,7 +560,7 @@ img {
   color: #fff;
 }
 .card__image{
-  height: 270px;
+  height: 220px;
 }
 .card__btn {
   width: 10%;
