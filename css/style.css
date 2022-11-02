@@ -5,8 +5,7 @@
 
 
 /* my own ooo */
-
-.fuckoff{
+/* .fuckoff{
   border-width: 0px;
  border-radius: 30px;
  width: 300px;
@@ -14,9 +13,23 @@
  border: 2px solid white;
  outline: none;
  box-shadow: 2px 2px 4px white, inset -2px -2px 4px white;
+} */
+.footer-col-3{
+  margin-left: 60%;
+}
+.follow{
+ margin-right: 18%;
 }
 hr{
   border-color: #daed0e;
+}
+ul.join{
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+  border-radius: 50%;
+  position:relative;
+  left: 240px;
 }
 .next{
   position:relative;
@@ -174,7 +187,9 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 /* menu query for menu */
 @media only screen and (max-width: 720px){
-  
+  .follow{
+    margin-right: 68%;
+   } 
   
   main{
     max-width: 60%;
@@ -182,11 +197,23 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-right: auto; 
     padding: 4px;
   }
+
+
+  ul.join{
+    display: flex;
+    justify-content: space-between;
+    width: 37%;
+    border-radius: 50%;
+    position:relative;
+    left: 10px;
+  }
+
+
   hr{
     border-color: #daed0e;
   }
   
-  .fuckoff{
+  /* .fuckoff{
       border-width: 0px;
      border-radius: 30px;
      width: 300px;
@@ -194,7 +221,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
      border: 2px solid white;
      outline: none;
      box-shadow: 2px 2px 4px white, inset -2px -2px 4px white;
-  }
+  } */
   nav ul{
     position:absolute;
     top: 90px;
@@ -263,14 +290,28 @@ color: #fff;
   .row{
     text-align: center;
   }
+
+
+  ul.join{
+    display: flex;
+    justify-content: space-between;
+    width: 37%;
+    border-radius: 50%;
+    position:relative;
+    left: 130px;
+  }
+
+
   .col-2, .col-3, .col-4{
     flex-basis: 100%;
   }
  .h1{
    text-align: center;
  }
- .menu-icon{
-   padding-left: 40px;
+  .menu-icon{
+   width: 21px;
+   position: relative;
+  right: 60px;
  }
 }
 
@@ -306,6 +347,7 @@ body {
     padding: 0;
   
   }
+  
 }
 
 ul {
@@ -338,16 +380,7 @@ img {
   text-align: center;
   letter-spacing: 1.3px;
 }
-  @media (min-width: 600px) {
-  .display-title {
-    font-size: 3rem;
-  }
-}
 
-.page-title {
-  text-align: center;
-  font-weight: 700;
-}
  @media (min-width: 600px) {
   .page-title {
     font-size: 2rem;
