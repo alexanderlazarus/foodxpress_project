@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    opacity: 20%;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+h1{
+    position: relative;
+    top: 60px;
+    left: 20px;
+}
+
+
+.gold{
+    background-image: url("./img/moist-chocolate-cupcakes-5.jpg");
+   background-repeat: no-repeat;
+   width: 100vw;
+   height: 100vh;
+   background-size: cover;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+.gold p{
+    position: relative;
+    top: 60px;
+    left: 20px;
+    margin-bottom: 10%;
+    margin-left: 70px;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.gold h3{
+    /* width: 27rem; */
+    position: relative;
+    top:8rem;
+   margin: 0 auto;
+   position: relative;
+   left: 20px;
+}
+button{
+    border: 0;
+    width: 80px;
+    color: whitesmoke;
+    background-color: orangered;
+}

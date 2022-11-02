@@ -149,9 +149,10 @@ filter: grayscale(100px);
  border: 100px groove solid;
 }
 
-.foodxpress{
+ .foodxpress{
   font-size: x-large;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: #333;
 }
 .hey{
   width: 100px;
